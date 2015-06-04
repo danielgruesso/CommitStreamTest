@@ -14,8 +14,6 @@ var express = require('express'),
   domainMiddleware = require('express-domain-middleware'),
   methodOverride = require('method-override');
 
-// DO NOT MOVE THIS. It is here to wrap routes in a domain to catch unhandled errors
-app.use(domainMiddleware);
 
 // DO NOT MOVE THIS. It is here to handle unhandled rejected Promises cleanly
 Promise.onPossiblyUnhandledRejection(function(err) {
