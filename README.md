@@ -18,3 +18,5 @@ User test 1006
 Epic Test E-01001
 
 Issue Test  I-01001
+
+Backlog Group Test TH-01001
