@@ -16,3 +16,5 @@ Test No. 6 Story S-01001
 User test 1006
 
 Epic Test E-01001
+
+Issue Test  I-01001
