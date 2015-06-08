@@ -20,13 +20,6 @@ Promise.onPossiblyUnhandledRejection(function(err) {
   throw err;
 });
 
-validation.validateConfig();
-validation.validateEventStore(function(error) {
-  if (error) {
-    throw new Error(error);
-  }
-});
-
 // override with the X-HTTP-Method-Override header in the request
 app.use(methodOverride('X-HTTP-Method-Override'))
 
