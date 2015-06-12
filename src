@@ -23,10 +23,6 @@ Promise.onPossiblyUnhandledRejection(function(err) {
 var api = require("./api");
 require('./bootstrapper').boot(config);
 
-// Wire up express-handlebars as the view engine for express.
-app.engine('handlebars', exphbs());
-app.set('view engine', 'handlebars');
-
 app.use(express.static(__dirname + '/client'));
 
 app.get('/instances', function(req, res) {
