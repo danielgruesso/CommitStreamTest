@@ -20,15 +20,6 @@ Promise.onPossiblyUnhandledRejection(function(err) {
   throw err;
 });
 
-// override with the X-HTTP-Method-Override header in the request
-app.use(methodOverride('X-HTTP-Method-Override'))
-
-app.get('/version', function(req, res) {
-  res.json({
-    version: "0.0.0"
-  });
-});
-
 var api = require("./api");
 require('./bootstrapper').boot(config);
 
