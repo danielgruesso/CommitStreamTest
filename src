@@ -44,5 +44,3 @@ app.use(function(req, res, next) {
   return next();
 });
 
-// This must happen here, before we cover additional routes with Content-Type validation
-require('./api/instances/instancesController').init(app);
