@@ -27,7 +27,6 @@ require('./bootstrapper').boot(config);
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
-// NOTE: Do not rearrange the order of these app.* statements becaused they
 // are crucial for the order of operations in the pipeline of middleware
 // functions
 app.use(cors());
