@@ -68,6 +68,5 @@ require('./api/instances/instancesController').init(app);
 // Ensure all API routes have consistent Content-Type validation
 app.all('/api/*', apiRoutesRequireContentTypeAppJson);
 
-// Map API the routes
-api.init(app);
+
 
