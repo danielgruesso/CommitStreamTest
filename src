@@ -27,10 +27,6 @@ require('./bootstrapper').boot(config);
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
-// are crucial for the order of operations in the pipeline of middleware
-// functions
-app.use(cors());
-
 app.use(express.static(__dirname + '/client'));
 
 app.get('/instances', function(req, res) {
