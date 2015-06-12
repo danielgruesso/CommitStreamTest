@@ -38,7 +38,7 @@ app.set('view engine', 'handlebars');
 
 // NOTE: Do not rearrange the order of these app.* statements becaused they
 // are crucial for the order of operations in the pipeline of middleware
-// functions!
+// functions
 app.use(cors());
 
 app.use(express.static(__dirname + '/client'));
