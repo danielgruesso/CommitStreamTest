@@ -23,6 +23,8 @@ app.get('/instances', function(req, res) {
   res.render('instances');
 });
 
+// Test 10
+
 // Ensure that all routes with :instanceId parameters are properly authenticated
 app.param('instanceId', instanceAuthenticator);
 app.param('digestId', instanceToDigestValidator);
