@@ -50,9 +50,3 @@ app.use(function(req, res, next) {
 
 // This must happen here, before we cover additional routes with Content-Type validation
 require('./api/instances/instancesController').init(app);
-
-// Ensure all API routes have consistent Content-Type validation
-app.all('/api/*', apiRoutesRequireContentTypeAppJson);
-
-
-
