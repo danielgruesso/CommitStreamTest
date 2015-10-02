@@ -25,6 +25,7 @@ app.get('/instances', function(req, res) {
 
 // Test 10
 // Test 11
+// Test 12
 
 // Ensure that all routes with :instanceId parameters are properly authenticated
 app.param('instanceId', instanceAuthenticator);
