@@ -41,3 +41,8 @@ app.use(function(req, res, next) {
   return next();
 });
 
+// Return a URL as a special header for multiple requests
+app.use(function(req, res, next) {
+  res.setHeader("X-CommitStream-API-Docs", "https://github.com/openAgile/CommitStream.Web");
+  return next();
+});
